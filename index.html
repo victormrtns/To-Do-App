@@ -3,10 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <html lang="pt-br">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <title>ToDoList</title>
 </head>
 <body>
+    <div class="wrapper">
+        <div class="task-in">
+            <img src="task-icon.svg" alt="icon">
+            <input type="text" placeholder="Adicione uma nova tarefa.">
+        </div>
+        <div class="controls">
+            <div class="filters">
+                <span id="Tudo" class="active">Tudo</span>
+                <span id="Em andamento">Em andamento</span>
+                <span id="Feito">Feito</span>
+            </div>
+            <button class="clear-btn">Limpar tudo</button>
+        </div>
+            <ul class="task-box">
+                <li class="task">
+                    <label for="1">
+                        <input type="checkbox" id="1">
+                        <p>Receba</p>
+                    </label>
+                    <div class="settings">
+                        <i class="uil uil-ellipsis-h"></i>
+                        <ul class="task-menu">
+                          <li class="uil uil-pen">Editar</li>  
+                          <li class="uil uil-trash">Apagar</li>  
+                        </ul>
+                    </div>
+                </li>
+                <li class="task">
+                    <label for="1">
+                        <input type="checkbox" id="1">
+                        <p>Receba</p>
+                    </label>
+                    <i class="uil uil-ellipsis-h"></i>
+                </li>
+            </ul>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
